@@ -75,6 +75,16 @@ trellis init -u your-name
 
 Trellis Codex skills live in `.codex/skills/`. If Codex does not pick them up automatically, symlink that folder into `~/.agents/skills` and restart Codex.
 
+### Install from GitHub (self-managed)
+
+If you don't plan to publish to npm, install directly from GitHub and maintain your fork locally:
+
+```bash
+npm install -g git@github.com:orangle/Trellis.git
+```
+
+Replace the repo with your fork if needed. This keeps everything self-managed without pushing to npm.
+
 ## Use Cases
 
 ### Educating Your AI

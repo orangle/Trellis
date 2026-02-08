@@ -75,6 +75,16 @@ trellis init -u your-name
 
 Trellis 的 Codex 技能存放在 `.codex/skills/`。如果 Codex 无法自动识别，请将该目录软链到 `~/.agents/skills` 后重启 Codex。
 
+### 从 GitHub 安装（自维护）
+
+如果不打算发布到 npm，可以直接从 GitHub 安装并在你的 fork 中维护：
+
+```bash
+npm install -g git@github.com:orangle/Trellis.git
+```
+
+需要的话把仓库地址替换为你的 fork，即可保持自维护而无需发布到 npm。
+
 ## use cases
 
 ### 教会你的 AI
