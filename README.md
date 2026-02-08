@@ -58,6 +58,33 @@ trellis init -u your-name
 <img src="assets/info.png" alt="Trellis Initialization Example" />
 </p>
 
+## Codex Integration
+
+1. Initialize Trellis in your repo:
+
+```bash
+trellis init -u your-name
+```
+
+2. Start a Codex session and run **`$trellis-start`** to load workflow, context, and spec indexes.
+
+3. Use the Codex skills:
+   - **`$trellis-start`**: load workflow + context + spec indexes
+   - **`$trellis-parallel`**: launch the multi-agent worktree pipeline
+   - **`$trellis-record-session`**: log session summaries
+
+Trellis Codex skills live in `.codex/skills/`. If Codex does not pick them up automatically, symlink that folder into `~/.agents/skills` and restart Codex.
+
+### Install from GitHub (self-managed)
+
+If you don't plan to publish to npm, install directly from GitHub and maintain your fork locally:
+
+```bash
+npm install -g git@github.com:orangle/Trellis.git
+```
+
+Replace the repo with your fork if needed. This keeps everything self-managed without pushing to npm.
+
 ## Use Cases
 
 ### Educating Your AI

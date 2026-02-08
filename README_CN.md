@@ -58,6 +58,33 @@ trellis init -u your-name
 <img src="assets/info.png" alt="Trellis 初始化示例" />
 </p>
 
+## Codex 集成
+
+1. 在仓库中初始化 Trellis：
+
+```bash
+trellis init -u your-name
+```
+
+2. 打开 Codex 会话后运行 **`$trellis-start`**，加载 workflow、上下文与规范索引。
+
+3. 可用的 Codex 技能：
+   - **`$trellis-start`**：加载 workflow + context + spec 索引
+   - **`$trellis-parallel`**：启动多 Agent worktree 流水线
+   - **`$trellis-record-session`**：记录会话摘要
+
+Trellis 的 Codex 技能存放在 `.codex/skills/`。如果 Codex 无法自动识别，请将该目录软链到 `~/.agents/skills` 后重启 Codex。
+
+### 从 GitHub 安装（自维护）
+
+如果不打算发布到 npm，可以直接从 GitHub 安装并在你的 fork 中维护：
+
+```bash
+npm install -g git@github.com:orangle/Trellis.git
+```
+
+需要的话把仓库地址替换为你的 fork，即可保持自维护而无需发布到 npm。
+
 ## use cases
 
 ### 教会你的 AI
