@@ -16,3 +16,8 @@ Use `@/.trellis/` to learn:
 Keep this managed block so 'trellis update' can refresh the instructions.
 
 <!-- TRELLIS:END -->
+
+## Codex Notes
+
+- Start every new Codex session by running `$trellis-start` to load workflow, context, and specs.
+- Trellis Codex skills live in `.codex/skills/`.
